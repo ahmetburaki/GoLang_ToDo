@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Yapılacaklar Listesi</h1>
+        <ul id="todo-list">
+            <!-- Burada yapılacaklar listesi öğeleri yer alacak -->
+        </ul>
+        <div class="add-todo">
+            <input type="text" id="new-todo" placeholder="Yeni görev ekle...">
+            <input type="date" id="start-date" placeholder="Başlangıç tarihi seçin...">
+            <input type="date" id="end-date" placeholder="Bitiş tarihi seçin...">
+            <button onclick="addTodo()">Ekle</button>
+        </div>
+        <h2>Yapılanlar</h2>
+        <ul id="done-list">
+            <!-- Burada yapılan işler listesi yer alacak -->
+        </ul>
+        <h2>Silinenler</h2>
+        <ul id="deleted-list">
+            <!-- Burada silinen işler listesi yer alacak -->
+        </ul>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
